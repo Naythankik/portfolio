@@ -106,10 +106,7 @@ div.myself > p {
   border-radius: 10px;
   cursor: pointer;
 }
-.packages div.tool:hover {
-  width: 21%;
-  background: rgb(187, 80, 80);
-}
+
 .packages .tool > img {
   width: 20%;
   background: none;
@@ -119,6 +116,7 @@ div.myself > p {
   margin: 9px 0 0 25px;
   font-size: 20px;
   font-family: "Source Serif Pro", serif;
+  white-space: wrap;
 }
 section.services {
   background: whitesmoke;
@@ -167,7 +165,7 @@ div.development > h2 {
 
 div.development > p {
   background: none;
-  font-size: 1.325srem;
+  font-size: 1.325rem;
   line-height: 1.75rem;
   margin-top: 2px;
   color: grey;
@@ -303,4 +301,90 @@ div.links {
 }
 div.links > a {
   margin: 0 10px;
+}
+
+@media screen and (max-width: 500px) {
+  section.top-container {
+    width: auto;
+    height: 60vh;
+  }
+  section.top-container > img {
+    width: 100%;
+    height: 100%;
+  }
+  .intro {
+    bottom: 10px;
+    right: 3px;
+    left: 3px;
+    width: auto;
+  }
+  .intro > h1 {
+    font-size: 18px;
+    line-height: 10px;
+  }
+  .intro > h5 {
+    color: wheat;
+    font-size: 18px;
+  }
+
+  .intro > p {
+    color: rgb(203, 183, 145);
+    font-size: 12px;
+    font-family: "Dancing Script", cursive;
+    font-family: "Uchen", serif;
+  }
+
+  /* query for about me container */
+  div.packages {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+  }
+  .packages div.tool {
+    width: auto;
+    padding: 10px;
+  }
+
+  .packages .tool > img {
+    width: 15%;
+    background: none;
+  }
+  .packages .tool > span {
+    background: none;
+    margin: 9px 0 0 10px;
+    font-size: 15px;
+    font-family: "Source Serif Pro", serif;
+    white-space: wrap;
+  }
+  /* query for services container */
+  div#services {
+    width: auto;
+  }
+  div.providers {
+    display: grid;
+  }
+
+  /* contact media query */
+
+  div.medium {
+    display: grid;
+  }
+
+  div.name,
+  section.contact,
+  div#contact,
+  div#contact > p,
+  div.forms,
+  div.actions {
+    width: auto;
+  }
+  div.socials {
+    width: auto;
+    text-align: left;
+  }
+
+  div.actions {
+    margin-bottom: 20px;
+  }
 }
