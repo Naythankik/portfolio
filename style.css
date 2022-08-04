@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background: rgb(194, 194, 238);
+} */
+
+/* top section tags and children styling */
+section.top-container {
+  margin: 0 auto;
+  background: none;
+  width: 100%;
+  height: 99vh;
+  position: relative;
+}
+.top-container > img {
+  width: 100%;
+  height: 100%;
+}
+.intro {
+  background: none;
+  position: absolute;
+  bottom: 200px;
+  right: 70px;
+  width: 25%;
+  text-align: left;
+}
+.intro > h1 {
+  color: brown;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Uchen", serif;
+}
+.intro > h5 {
+  color: wheat;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Uchen", serif;
+}
+
+.intro > p {
+  color: rgb(203, 183, 145);
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Uchen", serif;
+}
+.intro > h1:hover {
+  text-shadow: 1px 1px 3px wheat;
+}
+.intro > h5:hover {
+  text-shadow: 1px 1px 20px brown;
+}
+
+/* the main for details about me */
+main {
+  background: white;
+}
+div.myself {
+  background: none;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0 5px;
+}
+div.myself > h1 {
+  color: brown;
+  font-size: 37px;
+  line-height: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+div.myself > h3 {
+  color: wheat;
+  font-size: 25px;
+  margin: 15px auto;
+  font-family: sans-serif;
+}
+div.myself > p {
+  color: gray;
+  line-height: 25px;
+  font-size: 23px;
+  font-family: Verdana;
+}
+
+.packages {
+  background: none;
+  margin: 20px auto;
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.packages div.tool {
+  background: rgb(243, 241, 241);
+  border: none;
+  outline: none;
+  width: 20%;
+  padding: 15px;
+  margin: 5px;
+  display: flex;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.packages div.tool:hover {
+  width: 21%;
+  background: rgb(187, 80, 80);
+}
+.packages .tool > img {
+  width: 20%;
+  background: none;
+}
+.packages .tool > span {
+  background: none;
+  margin: 9px 0 0 25px;
+  font-size: 20px;
+  font-family: "Source Serif Pro", serif;
+}
+section.services {
+  background: whitesmoke;
+}
+div#services {
+  background: none;
+  margin: 0 auto;
+  width: 90%;
+  padding: 5px 5px 50px 5px;
+}
+div#services > h1 {
+  color: brown;
+  margin: 50px auto;
+  font-size: 37px;
+  line-height: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+div#services > h3 {
+  color: wheat;
+  font-size: 25px;
+  margin: 30px auto;
+  font-family: sans-serif;
+}
+div.providers {
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+div.development {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+div.development:hover {
+  box-shadow: 1px 1px 5px 2px wheat;
+  padding: 16px;
+}
+div.development > h2 {
+  text-align: center;
+  font-size: 25px;
+  color: brown;
+}
+
+div.development > p {
+  background: none;
+  font-size: 1.325srem;
+  line-height: 1.75rem;
+  margin-top: 2px;
+  color: grey;
+  text-align: justify;
+}
+
+section.contact {
+  background: rgb(243, 247, 248);
+}
+div#contact {
+  background: none;
+  margin: 0 auto;
+  width: 90%;
+  padding: 5px 5px 50px 5px;
+}
+div#contact > h1 {
+  color: brown;
+  margin: 50px auto;
+  font-size: 37px;
+  line-height: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+div#contact > h3 {
+  color: wheat;
+  font-size: 25px;
+  margin: 30px auto;
+  font-family: sans-serif;
+}
+div#contact > p {
+  background: none;
+  width: 40%;
+  font-size: 20px;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  color: grey;
+}
+
+div.medium {
+  background: none;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+div.forms {
+  background: none;
+  width: 50%;
+}
+
+div.name {
+  background: none;
+  width: 80%;
+  display: grid;
+  margin-bottom: 20px;
+}
+div.name > label {
+  background: none;
+  margin: 5px 0;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+div.name > input {
+  padding: 15px 10px;
+  border-radius: 8px;
+  outline: 1px solid grey;
+  border: none;
+}
+div.name > textarea {
+  resize: none;
+  padding: 15px 10px;
+  border-radius: 8px;
+  outline: 1px solid grey;
+  border: none;
+}
+div.actions {
+  background: none;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+div.actions > a {
+  text-decoration: underline;
+  color: black;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Source Serif Pro", serif;
+}
+
+div.actions > button {
+  background: rgb(237, 177, 67);
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 25%;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+div.socials {
+  background: none;
+  width: 50%;
+  text-align: right;
+}
+
+div.socials > div.email {
+  background: none;
+  margin-bottom: 20px;
+  display: grid;
+}
+div.email > label {
+  background: none;
+  margin: 5px 0;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 550;
+}
+div.email > a {
+  text-decoration: none;
+  color: brown;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: "Source Serif Pro", serif;
+}
+div.links {
+  background: none;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+div.links > a {
+  margin: 0 10px;
+}
