@@ -103,6 +103,7 @@ div.myself > p {
   padding: 0.5rem 1rem;
   margin: 5px;
   display: flex;
+  align-items: center;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -113,7 +114,7 @@ div.myself > p {
 }
 .packages .tool > span {
   background: none;
-  margin: 9px 0 0 1rem;
+  margin: 0 0 0 1rem;
   font-size: medium;
   white-space: wrap;
 }
