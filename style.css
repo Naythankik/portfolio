@@ -13,7 +13,7 @@ section.top-container {
   margin: 0 auto;
   background: none;
   width: 100%;
-  height: 99vh;
+  /* height: 99vh; */
   position: relative;
 }
 .top-container > img {
@@ -333,7 +333,7 @@ div.links > a {
 @media screen and (max-width: 500px) {
   section.top-container {
     width: auto;
-    height: 60vh;
+    /* height: 60vh; */
   }
   section.top-container > img {
     width: 100%;
