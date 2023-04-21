@@ -6,19 +6,21 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.post("/sendMail", (req, res) => {
+app.get("/sendMail", (req, res) => {
+  res.status(200).send({ success: "Message has been sent" });
+  return;
+
   const schema = Joi.object({
     fullName: Joi.string().required(),
     email: Joi.string().required().email(),
     message: Joi.string().min(10).required(),
   });
 
-  const { value, error } = schema.validate(req.body);
+  const { error, value } = schema.validate(req.body);
 
   //if there is error,
   if (error) {
-    const message = error.details[0].message;
-    res.status(400).send({ Error: message });
+    res.status(400).send({ Error: error.details[0].message });
     return;
   }
 

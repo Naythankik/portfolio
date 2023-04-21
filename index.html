@@ -17,7 +17,9 @@
   <body>
     <!-- the first container -->
     <section class="top-container">
-      <img src="./images/bigSkull.svg" alt="" />
+      <object data="./images/bigSkull.svg" width="100%" height="100%"></object>
+
+      <!-- <img src="./images/bigSkull.svg" alt="" /> -->
       <div class="intro">
         <h1>Hi, I am Nathaniel</h1>
         <h5>A Backend Developer.</h5>
@@ -148,6 +150,32 @@
       </div>
     </section>
 
+    <section class="services" hidden>
+      <div id="services">
+        <h1>Projects</h1>
+
+        <!-- Links to projet i have done-->
+        <div class="projects">
+          <ul>
+            <li>
+              <a href="https://github.com/Naythankik/portfolio" target="_blank"
+                >Todo App</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank">Todo App</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Todo App</a>
+            </li>
+            <li>
+              <a href="#" target="_blank">Todo App</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="contact">
       <div id="contact">
         <h1>Contact</h1>
@@ -232,9 +260,11 @@
       </div>
     </section>
     <div class="copyright">
-      <p style="font-family: Source Serif Pro; font-weight: 600">
-        &copy; Abolarin Nathaniel Okikiola 2022
-      </p>
+      <p
+        style="font-family: Source Serif Pro; font-weight: 600"
+        class="copyright"
+      ></p>
     </div>
   </body>
+  <script src="./index.js"></script>
 </html>
