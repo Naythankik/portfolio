@@ -105,6 +105,17 @@
 
         <div class="providers">
           <div class="development">
+            <img src="./images/frontend.png" alt="" />
+            <h2>Frontend Development</h2>
+            <p>
+              I render a website visitors can easily interact with the pages. I
+              do this through the combination of design, technology and
+              programming to code a website’s appearance, as well as taking care
+              of debugging and Optimizing the user experience.
+            </p>
+          </div>
+
+          <div class="development">
             <img src="./images/backend.png" alt="" />
             <h2>Backend Development</h2>
             <p>
@@ -115,7 +126,7 @@
               elements in interactive designs, to optimize the user experience.
             </p>
           </div>
-          <div class="development">
+          <div class="development" hidden>
             <img src="./images/mobile.png" alt="" />
             <h2>Mobile Application Development</h2>
             <p>
@@ -125,16 +136,6 @@
             </p>
           </div>
 
-          <div class="development">
-            <img src="./images/frontend.png" alt="" />
-            <h2>Frontend Development</h2>
-            <p>
-              I render a website visitors can easily interact with the pages. I
-              do this through the combination of design, technology and
-              programming to code a website’s appearance, as well as taking care
-              of debugging and Optimizing the user experience.
-            </p>
-          </div>
           <div class="development">
             <img src="./images/web.png" alt="" />
             <h2>Web Application Development</h2>
@@ -150,28 +151,91 @@
       </div>
     </section>
 
-    <section class="services" hidden>
+    <section class="services" style="background-color: white">
       <div id="services">
         <h1>Projects</h1>
 
-        <!-- Links to projet i have done-->
-        <div class="projects">
-          <ul>
-            <li>
-              <a href="https://github.com/Naythankik/portfolio" target="_blank"
-                >Todo App</a
-              >
-            </li>
-            <li>
-              <a href="#" target="_blank">Todo App</a>
-            </li>
-            <li>
-              <a href="#" target="_blank">Todo App</a>
-            </li>
-            <li>
-              <a href="#" target="_blank">Todo App</a>
-            </li>
-          </ul>
+        <div class="providers">
+          <div class="projects">
+            <div class="project">
+              <h2>Citrone Redesign</h2>
+              <p style="color: black; padding: 10px 0">
+                Citrone is a platform that makes it easier for educators to
+                create learning experiences that positively engage students.
+              </p>
+              <p>
+                Github :
+                <a href="https://github.com/Naythankik/citrone" target="_blank"
+                  >github.com/Naythankik/citrone</a
+                >
+              </p>
+              <p>
+                Deployment :
+                <a href="https://citrone.vercel.app/">citrone.vercel.app</a>
+              </p>
+              <p>Tools : NodeJS, Express, Cloudinary, MongoDB, Vercel</p>
+            </div>
+            <div class="project">
+              <h2>E-Commerce APP</h2>
+              <p style="color: black; padding: 10px 0">
+                E-Commerce APP allows registered user to access products of
+                their choice with authentication.
+              </p>
+              <p>
+                Github :
+                <a
+                  href="https://github.com/Naythankik/node-ecommerce"
+                  target="_blank"
+                  >github.com/Naythankik/node-ecommerce</a
+                >
+              </p>
+              <p>
+                Deployment :
+                <a href="https://citrone.vercel.app/" target="_blank"
+                  >citrone.vercel.app</a
+                >
+              </p>
+              <p>Tools : NodeJS, Express, MongoDB, Vercel</p>
+            </div>
+
+            <div class="project">
+              <h2>3ird APP</h2>
+              <p style="color: black; padding: 10px 0">
+                3ird APP allows registered user to access products posted by a
+                registered seller of their choice with authentication with
+                carts, saved items, orders and tracking of orders and payment
+                integration options.
+              </p>
+              <p>
+                Github :
+                <a href="https://github.com/Naythankik/3ird" target="_blank"
+                  >github.com/Naythankik/3ird</a
+                >
+              </p>
+
+              <p>Tools : Laravel/PHP, Mysql, Vercel</p>
+            </div>
+
+            <div class="project">
+              <h2>Video APP</h2>
+              <p style="color: black; padding: 10px 0">
+                VidApp is an imaginary app for renting and uploading of movies.
+              </p>
+              <p>
+                Github :
+                <a href="https://github.com/Naythankik/vidApp" target="_blank"
+                  >github.com/Naythankik/vidApp</a
+                >
+              </p>
+
+              <p>
+                Deployment :
+                <a href="#" target="_blank">vidapp.com</a>
+              </p>
+
+              <p>Tools : NodeJS, Express, MongoDB, Vercel</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -187,7 +251,11 @@
 
         <div class="medium">
           <div class="forms">
-            <form action="http://localhost:3000/sendMail" method="post">
+            <form
+              action="http://localhost:3000/sendMail"
+              method="post"
+              id="mailMe"
+            >
               <div class="name">
                 <label for="fullName">Name</label>
                 <input

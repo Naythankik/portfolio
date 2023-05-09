@@ -177,29 +177,25 @@ div.development > p {
 
 div.projects {
   margin: 0 auto;
-  border-radius: 10px;
   width: 100%;
+  font-family: "Dancing Script", cursive;
+  font-family: "Uchen", serif;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+div.project {
+  background: rgb(249 250 251);
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.7rem;
+  display: grid;
+}
+div.project h2 {
+  color: wheat;
 }
 
-div.projects ul {
-  list-style: none;
-  line-height: 1.75rem;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-div.projects ul a {
-  text-decoration: none;
-  color: grey;
-  font-size: 1.4rem;
-  margin-top: 2px;
-  font-family: "Source Serif Pro", serif;
-  font-weight: bold;
-}
-div.projects ul a:hover {
-  text-decoration: underline;
-}
 section.contact {
   background: rgb(243, 247, 248);
 }
@@ -368,6 +364,10 @@ div.copyright {
   div.actions > a {
     font-size: 13px;
   }
+
+  div.projects {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -454,5 +454,9 @@ div.copyright {
 
   div.actions {
     margin-bottom: 20px;
+  }
+
+  div.projects {
+    grid-template-columns: 1fr;
   }
 }
