@@ -17,9 +17,6 @@
   <body>
     <!-- the first container -->
     <section class="top-container">
-      <object data="./images/bigSkull.svg" width="100%" height="100%"></object>
-
-      <!-- <img src="./images/bigSkull.svg" alt="" /> -->
       <div class="intro">
         <h1>Hi, I am Nathaniel</h1>
         <h5>A Backend Developer.</h5>
@@ -31,7 +28,15 @@
       <div class="myself">
         <h1>About Me</h1>
         <h3 style="margin-bottom: 20px">A bit about me</h3>
-        <p>I am a Software Engineer with a foundational understanding of designing and implementing new features from concept to production. I prioritize user experience while developing reusable and efficient code. I am dedicated to merging good design, technology, and innovation in every project I undertake, from inception to launch. Currently, my focus lies primarily on backend development, with some experience in frontend development.</p>
+        <p>
+          I am a Software Engineer with a foundational understanding of
+          designing and implementing new features from concept to production. I
+          prioritize user experience while developing reusable and efficient
+          code. I am dedicated to merging good design, technology, and
+          innovation in every project I undertake, from inception to launch.
+          Currently, my focus lies primarily on backend development, with some
+          experience in frontend development.
+        </p>
         <h3 style="margin-top: 20px">Technology and Tools</h3>
         <p>
           Using a combination of cutting-edge technologies and reliable
@@ -86,8 +91,6 @@
       </div>
     </main>
 
-
-
     <section class="services" style="background-color: white">
       <div id="services">
         <h1>Projects</h1>
@@ -108,7 +111,9 @@
               </p>
               <p>
                 Deployment :
-                <a href="https://citrone.vercel.app/" target="_blank">citrone.vercel.app</a>
+                <a href="https://citrone.vercel.app/" target="_blank"
+                  >citrone.vercel.app</a
+                >
               </p>
               <p>Tools : NodeJS, Express, Cloudinary, MongoDB, Vercel</p>
             </div>
@@ -167,7 +172,9 @@
 
               <p>
                 Deployment :
-                <a href="https://vid-app.vercel.app/" target="_blank">vidapp.com</a>
+                <a href="https://vid-app.vercel.app/" target="_blank"
+                  >vidapp.com</a
+                >
               </p>
 
               <p>Tools : NodeJS, Express, MongoDB, Vercel</p>
@@ -198,9 +205,10 @@
             <img src="./images/backend.png" alt="" />
             <h2>Backend Development</h2>
             <p>
-            I write server-side web application logic. This includes developing APIs,
-              creating and managing databases and handling data storage and retrieval. I work together with front-end developers 
-              to ensure seamless integration of the website or application. 
+              I write server-side web application logic. This includes
+              developing APIs, creating and managing databases and handling data
+              storage and retrieval. I work together with front-end developers
+              to ensure seamless integration of the website or application.
             </p>
           </div>
           <div class="development" hidden>
@@ -217,8 +225,10 @@
             <img src="./images/web.png" alt="" />
             <h2>Web Application Development</h2>
             <p>
-              I'm involved in the development, testing, and deployment phases. Essentially, I write the code and implement the features of the application and test the application to ensure that it is
-              bug-free and that it meets all requirement.
+              I'm involved in the development, testing, and deployment phases.
+              Essentially, I write the code and implement the features of the
+              application and test the application to ensure that it is bug-free
+              and that it meets all requirement.
             </p>
           </div>
         </div>
@@ -236,16 +246,12 @@
 
         <div class="medium">
           <div class="forms">
-            <form
-              action="http://localhost:3000/sendMail"
-              method="post"
-              id="mailMe"
-            >
+            <form action="./mail.php" method="post">
               <div class="name">
                 <label for="fullName">Name</label>
                 <input
                   type="text"
-                  name="fullName"
+                  name="name"
                   id="fullName"
                   placeholder="Enter your full name"
                   required
@@ -276,7 +282,7 @@
                 <a href="mailto:nathabolarin@gmail.com"
                   >Send an email to me directly</a
                 >
-                <button type="submit">Submit</button>
+                <button type="submit" name="submit">Submit</button>
               </div>
             </form>
           </div>
